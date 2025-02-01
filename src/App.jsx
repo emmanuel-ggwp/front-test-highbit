@@ -25,11 +25,9 @@ function App() {
       })
       .catch((e) => {
         console.error('There was an error creating the task', e)
-        alert('There was an error creating the task')
+        alert('There was an error creating the task' + e)
       })
   }
-
-
 
   if (loading) {
     return <div>Loading...</div>;
