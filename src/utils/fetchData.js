@@ -22,9 +22,7 @@ const fetchData = (url, {
             if (!response.ok) {
 
                 return response.json().then(errorResponse => {
-                    if (response.status !== 400) {
-                        throw { message: `Network response was not ok: ${JSON.stringify(errorResponse)}` };
-                    } else {
+                    if (response.status === 400) {
                         let message = ''
                         for (const key in errorResponse) {
                             if (Object.prototype.hasOwnProperty.call(errorResponse, key)) {
@@ -33,6 +31,11 @@ const fetchData = (url, {
                             }
                         }
                         throw message
+
+                    } else if (response.status === 429) {
+                        throw 'Too many requests'
+                    } else {
+                        throw `Network response was not ok: ${JSON.stringify(errorResponse)}`
                     }
                 });
             }
