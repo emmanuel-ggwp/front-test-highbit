@@ -1,0 +1,5 @@
+- Make a TasksList an a Task component
+- Make a search
+- Mark as done or not done
+- Use localStorage to cache the tasks
+- Create pagination
