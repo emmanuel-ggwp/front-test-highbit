@@ -16,14 +16,6 @@ function App() {
         <div className="mt-8">
           <TaskList tasks={tasks} loading={loading} error={error} />
         </div>
-        <div className="mt-8">
-          <button
-            className="border-2 border-red-500 p-2 text-red-500"
-          >Clear Completed Task</button>
-          <button
-            className="border-2 border-indigo-500 p-2 text-indigo-500 ml-4"
-          >Reset Todo List</button>
-        </div>
       </div>
     </div>
 

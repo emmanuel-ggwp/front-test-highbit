@@ -1,8 +1,11 @@
-# React + Vite
+-- Requirements
+    Node 22.9 (Very likely you are going to run the project with 18 or even lower, but 22 its the one i used)
+    Npm 10.8.3 (Same of Node)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1) Install the modules
+    npm install
 
-Currently, two official plugins are available:
+2) Run server in dev mode
+    npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3) Enyoi
