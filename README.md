@@ -8,4 +8,4 @@
 2) Run server in dev mode
     npm run dev
 
-3) Enyoi
+3) Enjoy
